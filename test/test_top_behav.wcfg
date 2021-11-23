@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject db_ref_id="1" fp_name="/test_top/sim_clk" type="logic">
+      <obj_property name="ElementShortName">sim_clk</obj_property>
+      <obj_property name="ObjectShortName">sim_clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/sim_rst" type="logic">
+      <obj_property name="ElementShortName">sim_rst</obj_property>
+      <obj_property name="ObjectShortName">sim_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/I_wDataEn" type="logic">
+      <obj_property name="ElementShortName">I_wDataEn</obj_property>
+      <obj_property name="ObjectShortName">I_wDataEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/I_wData" type="array">
+      <obj_property name="ElementShortName">I_wData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_wData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram0_wEn" type="logic">
+      <obj_property name="ElementShortName">S_Bram0_wEn</obj_property>
+      <obj_property name="ObjectShortName">S_Bram0_wEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram0_wData" type="array">
+      <obj_property name="ElementShortName">S_Bram0_wData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Bram0_wData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram0_wAddr" type="array">
+      <obj_property name="ElementShortName">S_Bram0_wAddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Bram0_wAddr[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram1_wEn" type="logic">
+      <obj_property name="ElementShortName">S_Bram1_wEn</obj_property>
+      <obj_property name="ObjectShortName">S_Bram1_wEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram1_wData" type="array">
+      <obj_property name="ElementShortName">S_Bram1_wData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Bram1_wData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram1_wAddr" type="array">
+      <obj_property name="ElementShortName">S_Bram1_wAddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Bram1_wAddr[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_wCnt" type="array">
+      <obj_property name="ElementShortName">S_BramX_wCnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_wCnt[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_wState" type="array">
+      <obj_property name="ElementShortName">S_BramX_wState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_wState[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_rAddrEn" type="logic">
+      <obj_property name="ElementShortName">S_BramX_rAddrEn</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_rAddrEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_rAddr" type="array">
+      <obj_property name="ElementShortName">S_BramX_rAddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_rAddr[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_rCnt" type="array">
+      <obj_property name="ElementShortName">S_BramX_rCnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_rCnt[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_rState" type="array">
+      <obj_property name="ElementShortName">S_BramX_rState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_rState[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_BramX_rDataEn" type="logic">
+      <obj_property name="ElementShortName">S_BramX_rDataEn</obj_property>
+      <obj_property name="ObjectShortName">S_BramX_rDataEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/D_Bram0_rValid" type="logic">
+      <obj_property name="ElementShortName">D_Bram0_rValid</obj_property>
+      <obj_property name="ObjectShortName">D_Bram0_rValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram0_rData" type="array">
+      <obj_property name="ElementShortName">S_Bram0_rData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Bram0_rData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/D_Bram1_rValid" type="logic">
+      <obj_property name="ElementShortName">D_Bram1_rValid</obj_property>
+      <obj_property name="ObjectShortName">D_Bram1_rValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/S_Bram1_rData" type="array">
+      <obj_property name="ElementShortName">S_Bram1_rData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Bram1_rData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/O_rDataEn" type="logic">
+      <obj_property name="ElementShortName">O_rDataEn</obj_property>
+      <obj_property name="ObjectShortName">O_rDataEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_DataPingpangBufCtl_inst/O_rData" type="array">
+      <obj_property name="ElementShortName">O_rData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_rData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

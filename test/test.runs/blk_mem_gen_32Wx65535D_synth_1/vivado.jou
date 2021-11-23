@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Wed Sep 29 12:43:25 2021
+# Process ID: 18844
+# Log file: C:/MyProjects/FPGA/test/test.runs/blk_mem_gen_32Wx65535D_synth_1/blk_mem_gen_32Wx65535D.vds
+# Journal file: C:/MyProjects/FPGA/test/test.runs/blk_mem_gen_32Wx65535D_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_32Wx65535D.tcl

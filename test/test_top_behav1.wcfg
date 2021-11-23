@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject db_ref_id="1" fp_name="/test_top/sim_clk" type="logic">
+      <obj_property name="ElementShortName">sim_clk</obj_property>
+      <obj_property name="ObjectShortName">sim_clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/sim_rst" type="logic">
+      <obj_property name="ElementShortName">sim_rst</obj_property>
+      <obj_property name="ObjectShortName">sim_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_singleToneGen_inst/S_addrEn" type="logic">
+      <obj_property name="ElementShortName">S_addrEn</obj_property>
+      <obj_property name="ObjectShortName">S_addrEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_singleToneGen_inst/S_addr" type="array">
+      <obj_property name="ElementShortName">S_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_addr[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_singleToneGen_inst/S_state" type="array">
+      <obj_property name="ElementShortName">S_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_singleToneGen_inst/T_brmDataEn" type="logic">
+      <obj_property name="ElementShortName">T_brmDataEn</obj_property>
+      <obj_property name="ObjectShortName">T_brmDataEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_singleToneGen_inst/T_brmDataIm" type="array">
+      <obj_property name="ElementShortName">T_brmDataIm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">T_brmDataIm[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test_top/U_singleToneGen_inst/T_brmDataRe" type="array">
+      <obj_property name="ElementShortName">T_brmDataRe[15:0]</obj_property>
+      <obj_property name="ObjectShortName">T_brmDataRe[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

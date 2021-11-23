@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xbip_utils_v3_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd"
+vhdl c_reg_fd_v12_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd"
+vhdl c_reg_fd_v12_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0.vhd"
+vhdl c_mux_bit_v12_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/c_mux_bit_v12_0/hdl/c_mux_bit_v12_0_vh_rfs.vhd"
+vhdl c_mux_bit_v12_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/c_mux_bit_v12_0/hdl/c_mux_bit_v12_0.vhd"
+vhdl c_shift_ram_v12_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd"
+vhdl c_shift_ram_v12_0  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd"
+vhdl xil_defaultlib  "../../../test.srcs/sources_1/ip/c_shift_ram_32Wx1024D/sim/c_shift_ram_32Wx1024D.vhd"

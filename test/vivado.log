@@ -1,0 +1,1962 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Sun Sep 26 19:50:41 2021
+# Process ID: 10212
+# Log file: C:/MyProjects/FPGA/test/vivado.log
+# Journal file: C:/MyProjects/FPGA/test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/MyProjects/FPGA/test/test.xpr
+INFO: [Project 1-313] Project file moved from 'C:/MyProjects/FPGA/test/test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 686.941 ; gain = 141.629
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2619643189 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 19:52:31 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 727.414 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 729.363 ; gain = 1.949
+add_wave {{/test_top/U_comDelay_inst/I_srcData}} {{/test_top/U_comDelay_inst/O_dstData}} {{/test_top/U_comDelay_inst/S_Delay_Data}} {{/test_top/U_comDelay_inst/S_Delay_Cnt}} 
+save_wave_config {C:/MyProjects/FPGA/test\test_top_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/MyProjects/FPGA/test/test_top_behav.wcfg
+set_property xsim.view C:/MyProjects/FPGA/test/test_top_behav.wcfg [get_filesets sim_1]
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -norecurse C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v
+update_compile_order -fileset sources_1
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 756.652 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1601458269 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 20:12:53 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 756.652 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 756.652 ; gain = 0.000
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/T_val}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 756.652 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4066823676 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 20:16:22 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 756.652 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 756.652 ; gain = 0.000
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/T_val}} 
+add_wave {{/test_top/U_comPulseShift_inst/I_pulse}} {{/test_top/U_comPulseShift_inst/O_pulse}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 795.863 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 575876076 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 20:29:17 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 795.863 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 795.863 ; gain = 0.000
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+add_files -norecurse C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v
+update_compile_order -fileset sources_1
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 795.863 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=15)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 991172674 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 21:02:56 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 795.863 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 795.863 ; gain = 0.000
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulse}} {{/test_top/U_comPulseDelay_inst/T_delayCnt}} {{/test_top/U_comPulseDelay_inst/T_pulse}} {{/test_top/U_comPulseDelay_inst/T_pulse_valid}} 
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 795.863 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=15)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3309613863 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 21:08:22 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 795.863 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 795.863 ; gain = 0.000
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 795.863 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=15)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1496759866 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 21:14:51 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 795.863 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 795.863 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 795.863 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3152047333 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 26 21:17:43 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 795.863 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 795.863 ; gain = 0.000
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 795.863 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 795.863 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <comDelay> not found while processing module instance <U_comDelay_inst> [C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v:51]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 795.863 ; gain = 0.000
+add_files -norecurse C:/MyProjects/FPGA/test/code/src/com/comDelay.v
+WARNING: [filemgmt 56-12] File 'C:/MyProjects/FPGA/test/code/src/com/comDelay.v' cannot be added to the project because it already exists in the project, skipping this file
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 55.262 ; gain = 0.027
+
+    while executing
+"webtalk_transmit -clientid 3392381150 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:02:49 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 799.031 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:41 . Memory (MB): peak = 799.031 ; gain = 0.000
+add_wave {{/test_top/U_comDelay_inst/I_srcData}} {{/test_top/U_comDelay_inst/O_dstData}} {{/test_top/U_comDelay_inst/S_Delay_Data}} {{/test_top/U_comDelay_inst/T_Delay_Data}} {{/test_top/U_comDelay_inst/S_Delay_Cnt}} {{/test_top/U_comDelay_inst/S_State}} 
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 799.313 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 494755870 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:06:48 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 799.313 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:33 . Memory (MB): peak = 799.313 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 799.313 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3938111719 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:18:26 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 799.313 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 799.313 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 799.313 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.comPulseDelay(C_SHIFT_NUM=20)
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3112112203 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:20:39 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 799.313 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 799.313 ; gain = 0.000
+run 10 us
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulse}} 
+add_wave {{/test_top/U_comPulseShift_inst/I_pulse}} {{/test_top/U_comPulseShift_inst/O_pulse}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 801.566 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 135906355 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:26:02 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 801.566 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:36 . Memory (MB): peak = 801.566 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 801.566 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1204587924 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:30:45 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 801.566 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:42 . Memory (MB): peak = 801.566 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 801.566 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3477399541 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:34:17 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 801.566 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:37 . Memory (MB): peak = 801.566 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 801.566 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 184676983 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:35:57 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:30 . Memory (MB): peak = 801.566 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:38 . Memory (MB): peak = 801.566 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 801.566 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+ERROR: [VRFC 10-91] I_pulse is not declared [C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v:29]
+ERROR: [VRFC 10-91] I_pulse is not declared [C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v:31]
+ERROR: [VRFC 10-1040] module comPulseShift ignored due to previous errors [C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v:8]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+ERROR: [VRFC 10-91] I_pulse is not declared [C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v:29]
+ERROR: [VRFC 10-91] I_pulse is not declared [C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v:31]
+ERROR: [VRFC 10-1040] module comPulseShift ignored due to previous errors [C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v:8]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1113043013 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:48:24 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 801.566 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+WARNING: Simulation object /test_top/U_comPulseDelay_inst/O_pulse was not found in the design.
+WARNING: Simulation object /test_top/U_comPulseShift_inst/I_pulse was not found in the design.
+WARNING: Simulation object /test_top/U_comPulseShift_inst/O_pulse was not found in the design.
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 801.566 ; gain = 0.000
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/I_impulse}} {{/test_top/U_comPulseShift_inst/O_pulseShift}} 
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulseDelay}} 
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 803.141 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 835389123 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 11:57:26 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 803.141 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+WARNING: Simulation object /test_top/U_comPulseDelay_inst/O_pulse was not found in the design.
+WARNING: Simulation object /test_top/U_comPulseShift_inst/I_pulse was not found in the design.
+WARNING: Simulation object /test_top/U_comPulseShift_inst/O_pulse was not found in the design.
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:33 . Memory (MB): peak = 803.141 ; gain = 0.000
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/I_impulse}} {{/test_top/U_comPulseShift_inst/O_pulseShift}} 
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulseDelay}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 825.547 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2294157565 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 12:02:52 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 825.547 ; gain = 0.000
+run 10 us
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 825.547 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 55.578 ; gain = 0.172
+
+    while executing
+"webtalk_transmit -clientid 523388973 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 12:08:19 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:29 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:41 . Memory (MB): peak = 825.547 ; gain = 0.000
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/T_val}} 
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 825.547 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+"xvlog -m64 -prj test_top_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/raisingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raisingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/fallingEdgeFlg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fallingEdgeFlg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comPulseDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/src/com/comCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simCom/sim_clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_clk_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/code/sim/simMain/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 34dbe39b44c642fd86405f598ca0eb87 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_behav xil_defaultlib.test_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sim_clk_rst_default
+Compiling module xil_defaultlib.comCounter(C_COUNT_NUM=100)
+Compiling module xil_defaultlib.fallingEdgeFlg
+Compiling module xil_defaultlib.raisingEdgeFlg
+Compiling module xil_defaultlib.comDelay(C_DATA_WIDTH=1,C_DELAY_...
+Compiling module xil_defaultlib.comPulseShift
+Compiling module xil_defaultlib.comPulseDelay
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_top_behav
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 392293370 -regid "" -xml C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/usage_statistics_ext_..."
+    (file "C:/MyProjects/FPGA/test/test.sim/sim_1/behav/xsim.dir/test_top_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 12:20:49 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/MyProjects/FPGA/test/test.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_top_behav -key {Behavioral:sim_1:Functional:test_top} -tclbatch {test_top.tcl} -view {C:/MyProjects/FPGA/test/test_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:38 . Memory (MB): peak = 825.547 ; gain = 0.000
+run 10 us
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.

@@ -1,0 +1,16 @@
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_top.U_singleToneGen_inst.U_singleTuneIm_inst.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_top.U_singleToneGen_inst.U_singleTuneRe_inst.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_top.U_DataPingpangBufCtl_inst.U_Bram0_inst.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_top.U_DataPingpangBufCtl_inst.U_Bram1_inst.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_2 collision detected at time: 55000, A write address: 0, B read address: 0
+blk_mem_gen_v8_2 collision detected at time: 255000, A write address: 0, B read address: 0

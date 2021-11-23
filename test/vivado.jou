@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Sun Sep 26 19:50:41 2021
+# Process ID: 10212
+# Log file: C:/MyProjects/FPGA/test/vivado.log
+# Journal file: C:/MyProjects/FPGA/test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/MyProjects/FPGA/test/test.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test_top.tcl
+add_wave {{/test_top/U_comDelay_inst/I_srcData}} {{/test_top/U_comDelay_inst/O_dstData}} {{/test_top/U_comDelay_inst/S_Delay_Data}} {{/test_top/U_comDelay_inst/S_Delay_Cnt}} 
+save_wave_config {C:/MyProjects/FPGA/test\test_top_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/MyProjects/FPGA/test/test_top_behav.wcfg
+set_property xsim.view C:/MyProjects/FPGA/test/test_top_behav.wcfg [get_filesets sim_1]
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -norecurse C:/MyProjects/FPGA/test/code/src/com/comPulseShift.v
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/T_val}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/T_val}} 
+add_wave {{/test_top/U_comPulseShift_inst/I_pulse}} {{/test_top/U_comPulseShift_inst/O_pulse}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+add_files -norecurse C:/MyProjects/FPGA/test/code/src/com/comPulseDelay.v
+update_compile_order -fileset sources_1
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulse}} {{/test_top/U_comPulseDelay_inst/T_delayCnt}} {{/test_top/U_comPulseDelay_inst/T_pulse}} {{/test_top/U_comPulseDelay_inst/T_pulse_valid}} 
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+add_files -norecurse C:/MyProjects/FPGA/test/code/src/com/comDelay.v
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+add_wave {{/test_top/U_comDelay_inst/I_srcData}} {{/test_top/U_comDelay_inst/O_dstData}} {{/test_top/U_comDelay_inst/S_Delay_Data}} {{/test_top/U_comDelay_inst/T_Delay_Data}} {{/test_top/U_comDelay_inst/S_Delay_Cnt}} {{/test_top/U_comDelay_inst/S_State}} 
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulse}} 
+add_wave {{/test_top/U_comPulseShift_inst/I_pulse}} {{/test_top/U_comPulseShift_inst/O_pulse}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/I_impulse}} {{/test_top/U_comPulseShift_inst/O_pulseShift}} 
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulseDelay}} 
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/I_impulse}} {{/test_top/U_comPulseShift_inst/O_pulseShift}} 
+add_wave {{/test_top/U_comPulseDelay_inst/I_pulse}} {{/test_top/U_comPulseDelay_inst/O_pulseDelay}} 
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
+add_wave {{/test_top/U_comPulseShift_inst/T_val}} 
+run 10 us
+save_wave_config {C:/MyProjects/FPGA/test/test_top_behav.wcfg}
+launch_simulation
+open_wave_config C:/MyProjects/FPGA/test/test_top_behav.wcfg
+source test_top.tcl
+run 10 us
